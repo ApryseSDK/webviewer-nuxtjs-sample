@@ -1,10 +1,10 @@
-# WebViewer-Nuxt sample
+# WebViewer Nuxt 2 Sample
 
-[WebViewer](https://www.pdftron.com/documentation/web/) is a powerful JavaScript-based PDF Library that's part of the [PDFTron PDF SDK](https://www.pdftron.com). It provides a slick out-of-the-box responsive UI that interacts with the core library to view, annotate and manipulate PDFs that can be embedded into any web project.
+[WebViewer](https://docs.apryse.com/documentation/web/) is a powerful JavaScript-based PDF Library that is part of the [Apryse PDF SDK](https://apryse.com/). It provides a slick out-of-the-box responsive UI that interacts with the core library to view, annotate and manipulate PDFs that can be embedded into any web project.
 
 ![WebViewer UI](https://www.pdftron.com/downloads/pl/webviewer-ui.png)
 
-This repo is specifically designed for any users interested in integrating WebViewer into a Nuxt project. 
+This repo is specifically designed for any users interested in integrating WebViewer into a [Nuxt 2](https://v2.nuxt.com/) project. This project was created using the `npm init nuxt-app` command and uses the [BootstrapVue](https://bootstrap-vue.org/) UI Framework as well as the [Axios](https://v2.nuxt.com/examples/modules/axios/) NuxtJS module, which provides a promise based HTTP client.
 
 ## Demos
 
@@ -23,26 +23,33 @@ This repo is specifically designed for any users interested in integrating WebVi
 
 ## Trial
 
-WebViewer comes with a 7-day trial without any feature limitations or trial key needed. To extend the trial, you can obtain the trial key by [signing-up](https://dev.apryse.com/) on our [developer portal](https://dev.apryse.com/).
+WebViewer comes with a 7-day trial without any feature limitations or trial key needed. To extend the trial, a trial key can be obtained by signing-up through the [developer portal](https://dev.apryse.com/).
 
-## Initial Setup
+## Install
 
-Before you begin, make sure your development environment includes [Node.js](https://nodejs.org/en/).
+Before beginning, make sure the development environment includes [Node.js](https://nodejs.org/en/).
 
-```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+```
+git clone https://github.com/ApryseSDK/webviewer-nuxtjs-sample.git
+cd webviewer-nuxtjs-sample
+npm install
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+## Run
+In Visual Studio Code or from a Command Prompt window, preview the app in `localhost:3000` with an `npm` command.
 
+```
+npm run dev
+```
+
+For detailed explanation on Nuxt 2 commands and deployment, check out the [documentation](https://v2.nuxt.com/docs/get-started/commands/).
+
+## Customize configuration
+See [Configuration Reference](https://v2.nuxt.com/docs/features/configuration/).
+
+## API Reference
+* [@pdftron/webviewer API documentation](https://docs.apryse.com/api/web/global.html#WebViewer__anchor)
+
+## License
+
+For licensing, refer to [License](LICENSE).
