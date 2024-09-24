@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import WebViewer from '../components/WebViewer.vue'
+import WebViewer from '../components/WebViewer.vue';
 export default {
   name: 'App',
   components: {
@@ -15,9 +15,9 @@ export default {
   data() {
     return {
       publicPath: process.env.BASE_URL
-    }
+    };
   }
-}
+};
 </script>
 
 <style>

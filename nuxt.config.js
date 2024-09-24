@@ -54,4 +54,4 @@ export default {
   // Build Configuration: https://v2.nuxt.com/docs/configuration-glossary/configuration-build/
   build: {
   }
-}
+};
