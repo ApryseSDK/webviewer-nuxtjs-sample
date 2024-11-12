@@ -1,5 +1,5 @@
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
+  // Global page headers: https://v2.nuxt.com/docs/configuration-glossary/configuration-head
   head: {
     title: 'webviewer-nuxtjs-sample',
     htmlAttrs: {
@@ -16,52 +16,42 @@ export default {
     ]
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
+  // Global CSS: https://v2.nuxt.com/docs/configuration-glossary/configuration-css/
   css: [
   ],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+  // Plugins to run before rendering page: https://v2.nuxt.com/docs/configuration-glossary/configuration-plugins
   plugins: [
-    { src: '~/plugins/vue-session.client.js'},
-   
   ],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
+  // Auto import components: https://v2.nuxt.com/docs/configuration-glossary/configuration-components
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+  // Modules for dev and build (recommended): https://v2.nuxt.com/docs/configuration-glossary/configuration-modules#buildmodules
   buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
-    
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
+  // Modules: https://v2.nuxt.com/docs/configuration-glossary/configuration-modules
   modules: [
-    // https://go.nuxtjs.dev/bootstrap
+    // https://nuxt.com/modules/bootstrap
     'bootstrap-vue/nuxt',
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
-   
-  
-    
+    // https://axios.nuxtjs.org/
+    '@nuxtjs/axios'
   ],
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
-        /*
-      ** Disabling Bootstrap Compiled CSS
-      */
-      bootstrapVue: {
-        bootstrapCSS: true,
-        bootstrapVueCSS: true
-      },
-
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    
-    
+  // Axios module configuration: https://v2.nuxt.com/examples/modules/axios/
+  axios: {
+    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
+    baseURL: '/'
   },
-   
-  
-}
+
+  // Bootstrap-Vue module configuration: https://bootstrap-vue.org/docs#nuxtjs-module
+  bootstrapVue: {
+    bootstrapCSS: true,
+    bootstrapVueCSS: true
+  },
+
+  // Build Configuration: https://v2.nuxt.com/docs/configuration-glossary/configuration-build/
+  build: {
+  }
+};
